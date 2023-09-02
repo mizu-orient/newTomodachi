@@ -23,7 +23,7 @@ def wakati(text):
 
 #デフォルトの文の数は5
 def generate_text(num_sentence=10):
-	filename = "messages_759750762262691871.txt"
+	filename = "text.txt"
 	src = open(filename, "r").read()
 	wordlist = wakati(src)
 	print(wordlist)

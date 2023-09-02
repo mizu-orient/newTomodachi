@@ -1,2 +1,3 @@
 # newTomodachi
 newなtomodachi
+自分用のものなのであまり手順等は記載しない

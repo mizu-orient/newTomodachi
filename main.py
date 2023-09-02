@@ -6,15 +6,16 @@ from time import  sleep
 import random
 import create_base_data
 
-token = 'my_token'
+token = 'mytoken'
 
-my_channel = 'inuotv'   # 根城とするチャンネル名
+my_channel = 'スペイン'   # 根城とするチャンネル名
 use_message_limit = 3        # 根城から取得する過去メッセージ数（自分の発言は除外されるので実際はもっと少ない）
 
-base_file = 'messages_759750762262691871.txt'      # こいつが学習データ
+base_file = 'text.txt'      # こいつが学習データ
 use_markov_file = "base_text.txt"     # マルコフ連鎖プログラム実行時に使うセリフファイル
 
-client = discord.Client()
+# client = discord.Client()
+client = discord.Client(intents=discord.Intents.all())
 
 @client.event
 async def on_message(message):
